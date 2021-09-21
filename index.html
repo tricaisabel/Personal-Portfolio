@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        <link href="./assets/all.min.css" rel="stylesheet">
+        <link href="./assets/fontawesome.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./assets/styles.css">
+    </head>
+    <body>
+        <header>
+            <nav>
+                <img id="logo" src="./assets/logo.svg" alt="logo">
+                <div id="nav-links">
+                    <a href="#">Home</a>
+                    <a href="#">Projects</a>
+                    <a href="#">Education</a>
+                    <a href="#">Experience</a>
+                    <a href="#">Contact me</a> 
+                    <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>             
+                </div>
+                <div id="socials">
+                    <a href="www.linkedin.com/in/isabel-trica"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fa fa-inbox"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+                <button id="menu-btn" onclick="myFunction()"><i class="fas fa-ellipsis-v"></i></button>
+                <div id="menu-drop">
+                    <a href="#" class="drop-option">Home</a>
+                    <a href="#" class="drop-option">Projects</a>
+                    <a href="#" class="drop-option">Education</a>
+                    <a href="#" class="drop-option">Experience</a>
+                    <a href="#" class="drop-option">Contact me</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section>
+                <div class="hero-title">
+                    <h1 id="name">Isabel Trică</h1>
+                    <h1>Computer Science Student Interested in Web Design & Development</h1>
+                    <div id="location">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h1>Bucharest, Romania</h1> 
+                    </div>    
+                </div>
+            </section>
+            <section id="hero">
+                <img src="./assets/blend.svg" alt="hero-blend" id="hero-background">
+                <div id="left-info">
+                    <div class="card" id="dot1">
+                        <h2 class="card-title" id="dot1">Motivation</h2> 
+                        <p class="card-info">I am excited to learn new things and a creative mind.</p>
+                    </div>
+                    <div class="card" id="dot2">
+                        <h2 class="card-title" >Education</h2>
+                        <p class="card-info">I'm in my terminal year and I'm looking for opportunities</p>
+                    </div>
+                    <div class="card" id="dot3">
+                        <h2 class="card-title" >Passions</h2>
+                        <p class="card-info">My passions are programming, web design and web development</p>
+                    </div>
+                </div>
+                <div id="center-photo">
+                    <img src="./assets/profile-bubble.svg" alt="profile bubble"/>
+                </div>
+                <div id="right-info">
+                    <div class="card" id="dot4">
+                        <h2 class="card-title" >Graphic Design</h2>
+                        <p class="card-info">I have been a graphic designer for 3 years</p>
+                    </div>
+                    <div class="card" id="dot5">
+                        <h2 class="card-title" >Programming</h2>
+                        <p class="card-info">I have been learning different programming languages for the past 8 years</p>
+                    </div>
+                    <div class="card" id="dot6">
+                        <h2 class="card-title" >Web Design & Development</h2>
+                        <p class="card-info">In the last year I have worked on several project</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("menu-drop");
+                if (x.style.display === "none") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
+    </body>
+</html>
