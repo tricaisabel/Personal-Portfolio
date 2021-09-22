@@ -156,12 +156,6 @@ i:hover, .drop-option:hover{
     animation-iteration-count: infinite;
 }
 
-@keyframes color-change{
-    0%{ color:#1EA3DC;}
-    50%{color:#828282;}
-    100%{color:#1EA3DC;}
-}
-
 #location i{
     animation-name:none;
     color:#828282;
@@ -179,6 +173,7 @@ i:hover, .drop-option:hover{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
+    height:550px;
 }
 
 #hero-background{
@@ -235,10 +230,7 @@ i:hover, .drop-option:hover{
     padding:0px 25px;
 }
 
-.card:hover{
-    transform:scale(1.05);
-    filter:drop-shadow(0 0 7px rgb(30, 163, 220,0.3));  
-}
+/* Glow Effect */
 
 /* Dot Placement */
 #dot1, #dot2, #dot3{ 
@@ -291,8 +283,75 @@ i:hover, .drop-option:hover{
 }
 
 /* Projects */
+/* Gallery Images*/
+.column{
+    width:35%;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.row{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width:70%;
+    margin:auto;
+}
+
+.column img{
+    width:100%;
+    height:auto;
+    padding:10px;
+    border-radius:20px;
+    transition: transform 2s, filter 1s;
+}
 
 
+
+/* Gallery Text */
+.category{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:60px;
+
+}
+
+.category-name, .section-name{
+    text-align: center;
+}
+
+.section-name{
+    animation-name:color-change;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+}
+
+.category-name{ margin-top:50px;}
+
+.category-name i{
+    margin-right: 10px;
+    width:15px;
+}
+
+.blue-btn{
+    text-decoration: none;
+    color:#828282;
+    font-weight: 600;
+    background-color: rgb(30, 163, 220,0.2);
+    padding:15px 20px;
+    border-radius: 30px;
+    transition: transform 2s, filter 1s, color 2s;
+    width:100px;
+    align-self:center;
+}
+
+.blue-btn:hover{ color:#121212;}
+
+.photo-grid{ margin-bottom:50px;}
 
 @media screen and (max-width: 1500px) and (min-width: 1100px){
     #dot2{ left:15%;}
@@ -353,6 +412,19 @@ i:hover, .drop-option:hover{
     #name{
         font-size: 40px;
     }
+}
+
+/* Glow Effect */
+
+.card:hover, .blue-btn:hover, .column img:hover{
+    transform:scale(1.05);
+    filter:drop-shadow(0 0 7px rgb(30, 163, 220,0.3));  
+}
+
+@keyframes color-change{
+    0%{ color:#1EA3DC;}
+    50%{color:#828282;}
+    100%{color:#1EA3DC;}
 }
 
 
