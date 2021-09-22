@@ -209,7 +209,7 @@ i:hover, .drop-option:hover{
 }
 
 .card{
-    background-image: url("./dot.svg");
+    background-image: url("../assets/dot.svg");
     background-position: center;
     background-size: cover;
     width:200px;
@@ -264,22 +264,7 @@ i:hover, .drop-option:hover{
     left:2%;
 }
 
-@media screen and (max-width:1500px){
-    #dot2{ left:15%;}
-    .card{
-        padding:0.5%;
-    }
-}
 
-@media screen and (max-width:1100px){
-    #dot2{
-        top:455px;
-    }
-    #dot3{
-        top:675px;
-    }
-    #dot1, #dot2, #dot3{left:8%; }
-}
 
 #dot4{
     top:235px;
@@ -294,14 +279,36 @@ i:hover, .drop-option:hover{
     right:2%;
 }
 
-@media screen and (max-width:1500px){
-    #dot5{ right:15%;}
+#dot4, #dot5, #dot6{ 
+    animation-name:slide-in-right;
+    animation-duration:3s;
+    animation-fill-mode:backwards;
+}
+
+@keyframes slide-in-right{
+    0%{right:0%; opacity:0;}
+    100%{}
+}
+
+@media screen and (max-width:1500px) and (min-width: 1100px){
+    #dot2{ left:15%;}
+
     .card{
         padding:0.5%;
     }
+
+    #dot5{ right:15%;}
 }
 
-@media screen and (max-width:1100px){
+@media screen and (max-width:1100px) and (min-width: 750px){
+    #dot2{
+        top:455px;
+    }
+    #dot3{
+        top:675px;
+    }
+    #dot1, #dot2, #dot3{left:8%; }
+
     #dot5{
         top:445px;
     }
@@ -318,19 +325,32 @@ i:hover, .drop-option:hover{
         top:380px;
     } 
     
-    #menu-btn{ display:block;}
+    #menu-btn{ 
+        display:block;
+        position: relative;
+        right: -100px;
+    }
+
+    #logo{ 
+        width:75px;
+        margin: 7px;
+        position: relative;
+        left: 22.8%;
+    }
+
+    .hero-title{
+        padding-top: 80px;
+    }
+
+    .menu-icon{ font-size:35px;}
 }
 
-#dot4, #dot5, #dot6{ 
-    animation-name:slide-in-right;
-    animation-duration:3s;
-    animation-fill-mode:backwards;
+@media screen and (max-width: 750px){
+    body{
+        background-color: red;
+    }
 }
 
-@keyframes slide-in-right{
-    0%{right:0%; opacity:0;}
-    100%{}
-}
 
 
 
