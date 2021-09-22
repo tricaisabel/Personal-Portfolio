@@ -305,7 +305,7 @@ i:hover, .drop-option:hover{
     width:100%;
     height:auto;
     padding:10px;
-    border-radius:20px;
+    border-radius:17px;
     transition: transform 2s, filter 1s;
 }
 
@@ -353,6 +353,43 @@ i:hover, .drop-option:hover{
 
 .photo-grid{ margin-bottom:50px;}
 
+/* Projects */
+
+.project-group{
+    display:flex;
+    flex-direction:row;
+    width:80%;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin:auto;
+}
+
+.project{
+    margin:10px;
+    background-color:#f1f1f1 ;
+}
+
+.project img{
+    width:100%;
+    position: relative;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom:-7px;
+}
+
+.overlay{
+    padding:35px 20px;
+    background-color:#f1f1f1 ;
+    text-align:center;
+}
+
+.overlay h4{
+    margin-top:0px;
+}
+
+.date{
+    
+}
 @media screen and (max-width: 1500px) and (min-width: 1100px){
     #dot2{ left:15%;}
 
