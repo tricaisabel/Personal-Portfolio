@@ -14,6 +14,10 @@ h3{
 
 /*Navbar*/
 
+#logo-title i{
+    font-size:20px;
+    margin-right:5px;}
+
 #nav-links{
     display:flex;
     flex-direction:row;
@@ -342,11 +346,10 @@ i:hover, .drop-option:hover{
     color:#828282;
     font-weight: 600;
     background-color: rgb(30, 163, 220,0.2);
-    padding:15px 20px;
+    padding:10px 14px;
     border-radius: 30px;
     transition: transform 2s, filter 1s, color 2s;
-    width:100px;
-    align-self:center;
+    margin:20px auto;
 }
 
 .blue-btn:hover{ color:#121212;}
@@ -366,7 +369,10 @@ i:hover, .drop-option:hover{
 
 .project{
     margin:10px;
-    background-color:#f1f1f1 ;
+    background-color:rgb(241,241,241,0.5) ;
+    width:30%;
+    transition:transform 2s;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .project img{
@@ -378,18 +384,33 @@ i:hover, .drop-option:hover{
 }
 
 .overlay{
-    padding:35px 20px;
-    background-color:#f1f1f1 ;
-    text-align:center;
+    padding:10% 5%;
 }
 
-.overlay h4{
-    margin-top:0px;
+.project:hover{
+    transform: scale(1.05);
 }
 
-.date{
-    
+.project-text{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
+
+.title, .language, .project-desc{
+    margin:6px;
+}
+
+.language{
+   font-size: 14px;
+   color:#828282;
+}
+
+.language i, .blue-btn i{ 
+    margin-right: 8px;
+    font-size: 14px;
+}
+
 @media screen and (max-width: 1500px) and (min-width: 1100px){
     #dot2{ left:15%;}
 

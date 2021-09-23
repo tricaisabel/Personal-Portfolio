@@ -12,10 +12,10 @@
     <body>
         <header>
             <nav>
-                <img id="logo" src="./assets/logo.svg" alt="logo">
+                <h3 id="logo-title"><i class="far fa-keyboard"></i>Isabel Trică</h3>
                 <div id="nav-links">
                     <a href="#">Home</a>
-                    <a href="#">Projects</a>
+                    <a href="#projects">Projects</a>
                     <a href="#">Education</a>
                     <a href="#">Experience</a>
                     <a href="#">Contact me</a> 
@@ -29,7 +29,7 @@
                 <button id="menu-btn" onclick="myFunction()"><i class="fas fa-bars menu-icon"></i></button>
                 <div id="menu-drop">
                     <a href="#" class="drop-option">Home</a>
-                    <a href="#" class="drop-option">Projects</a>
+                    <a href="" class="drop-option">Projects</a>
                     <a href="#" class="drop-option">Education</a>
                     <a href="#" class="drop-option">Experience</a>
                     <a href="#" class="drop-option">Contact me</a>
@@ -40,7 +40,7 @@
         <main>
             <section>
                 <div class="hero-title">
-                    <h1 id="name">Isabel Trică</h1>
+                    <h1 id="name">Welcome!</h1>
                     <h1>Computer Science Student Interested in Web Design & Development</h1>
                     <div id="location">
                         <i class="fas fa-map-marker-alt"></i>
@@ -83,7 +83,7 @@
                 </div>
             </section>
 
-            <section>
+            <section id="projects">
                 <h2 class="section-name">My Projects</h2>
                 <div class="projects-container">
                     <!-- Graphic Design Category -->
@@ -108,7 +108,7 @@
                                 </div>
                             </div>  
                         </div>
-                        <a href="#" class="blue-btn" id="gallery-btn">Full Gallery</a>
+                        <a href="#" class="blue-btn" id="gallery-btn"><i class="fas fa-images"></i>Full Gallery</a>
                     </div>
 
                     <!-- Programming Category -->
@@ -119,11 +119,10 @@
                                 <img src="./assets/laptop1.png" alt="">
                                 <div class="overlay">
                                     <div class="project-text">
-                                        <h4 class="title">Server-Client Java Library</h3>
-                                            <p class="date">01-01-2019</p>
-                                            <p class="language">Java</p>
-                                            <p class="project-des">A client sends requests to a server of 3 types: checking the availability of a certain book, renting a book, returning a book, and updating the quantity accordingly.</p>
-                                            <a href="#" class="blue-btn">Code & Full Description</a>
+                                        <h4 class="title">Server-Client Library</h3>
+                                        <p class="language"><i class="fas fa-keyboard"></i>Java</p>
+                                        <p class="project-desc">A client sends requests to a server of 3 types: checking the availability of a certain book, renting a book, returning a book, and updating the quantity accordingly. A library client can issue one of the previous types of requests through an option menu.</p>
+                                        <a href="#" class="blue-btn"><i class="fab fa-github"></i>Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -131,11 +130,10 @@
                                 <img src="./assets/laptop2.png" alt="">
                                 <div class="overlay">
                                     <div class="project-text">
-                                        <h4 class="title">Title 3</h3>
-                                            <p class="date">01-01-2019</p>
-                                            <p class="language">C++</p>
-                                            <p class="project-des">This is the first description for the first project</p>
-                                            <a href="#" class="blue-btn">Code & Full Description</a>
+                                        <h4 class="title">Voocab</h3>
+                                        <p class="language"><i class="fas fa-keyboard"></i>C# (Winforms)</p>
+                                        <p class="project-desc">This is a vocabulary app in which the users get to introduce new words, add definitions to existing ones and rate which definitions are the most accurate. The project has a search bar with autocomplete, different criteria to filter the words, a different visual analitics for the words updated automatically.</p>
+                                        <a href="#" class="blue-btn"><i class="fab fa-github"></i>Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -143,11 +141,10 @@
                                 <img src="./assets/laptop3.png" alt="">
                                 <div class="overlay">
                                     <div class="project-text">
-                                        <h4 class="title">Title 1</h3>
-                                            <p class="date">01-01-2019</p>
-                                            <p class="language">C++</p>
-                                            <p class="project-des">This is the first description for the first project</p>
-                                            <a href="#" class="blue-btn">Code & Full Description</a>
+                                        <h4 class="title">Online CV</h3>
+                                            <p class="language"><i class="fas fa-keyboard"></i>React,  CSS,  Material-UI</p>
+                                            <p class="project-desc">An Online CV with the scope of displaying important information about myself to interested employers. It was made during my Ubisoft practice program. I used already built React components and I changed their properties using CSS to personalise the overall interface.</p>
+                                            <a href="#" class="blue-btn"> <i class="fab fa-github"></i>Code</a>
                                     </div>
                                 </div>
                             </div>
@@ -157,42 +154,39 @@
                     <!-- Web Category -->
                     <div class="category">
                         <h3 class="category-name"><i class="fas fa-laptop-code"></i>Web Design & Development</h3>
-                        <div class="project">
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <div class="project-text">
-                                    <h4 class="title">Title 1</h3>
-                                        <p class="date">01-01-2019</p>
-                                        <p class="language">C++</p>
-                                        <p class="project-des">This is the first description for the first project</p>
-                                        <a href="#" class="blue-btn">Code & Full Description</a>
+                        <div class="project-group">
+                            <div class="project">
+                                <img src="./assets/laptop4.png" alt="">
+                                <div class="overlay">
+                                    <div class="project-text">
+                                        <h4 class="title">Pop Sushi</h3>
+                                            <p class="language"><i class="fas fa-bullhorn"></i>Product Landing Page</p>
+                                            <a href="https://codepen.io/tricaisabel/full/ZEyyYKy" class="blue-btn" target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="./assets/laptop5.PNG" alt="">
+                                <div class="overlay">
+                                    <div class="project-text">
+                                        <h4 class="title">Feedback Survey</h3>
+                                            <p class="language"><i class="fas fa-poll-h"></i>Survey Form</p>
+                                            <a href="https://codepen.io/tricaisabel/full/bGRBwKK" class="blue-btn" target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project">
+                                <img src="./assets/laptop6.PNG" alt="">
+                                <div class="overlay">
+                                    <div class="project-text">
+                                        <h4 class="title">HTML Documentation</h3>
+                                            <p class="language"><i class="fas fa-passport"></i>Technical Documentation Page</p>
+                                            <a href="https://codepen.io/tricaisabel/full/vYZJPBG" class="blue-btn" target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="project">
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <div class="project-text">
-                                    <h4 class="title">Title 1</h3>
-                                        <p class="date">01-01-2019</p>
-                                        <p class="language">C++</p>
-                                        <p class="project-des">This is the first description for the first project</p>
-                                        <a href="#" class="blue-btn">Code & Full Description</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project">
-                            <img src="" alt="">
-                            <div class="overlay">
-                                <div class="project-text">
-                                    <h4 class="title">Title 1</h3>
-                                        <p class="date">01-01-2019</p>
-                                        <p class="language">C++</p>
-                                        <p class="project-des">This is the first description for the first project</p>
-                                        <a href="#" class="blue-btn">Code & Full Description</a>
-                                </div>
-                            </div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
