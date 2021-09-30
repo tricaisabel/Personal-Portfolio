@@ -18,8 +18,8 @@
                     <a href="#">About me</a>
                     <a href="#projects">Projects</a>
                     <a href="#education">Education</a>
-                    <a href="#">Experience</a>
-                    <a href="#">Contact me</a> 
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact me</a> 
                     <a href="#" class="menu-icon"><i class="fas fa-bars"></i></a>             
                 </div>
                 <div id="socials">
@@ -89,7 +89,7 @@
                 <div class="projects-container">
                     <!-- Graphic Design Category -->
                     <div class="category">
-                        <h3 class="category-name"><i class="fas fa-paint-brush"></i>Graphic Design</h3>
+                        <h3 class="category-name" id="first-title"><i class="fas fa-paint-brush"></i>Graphic Design</h3>
                         <div class="photo-grid">
                             <div class="row">
                                 <div class="column">
@@ -289,54 +289,125 @@
 
             <section id="experience">
                 <h1 class="section-name">Experience</h1>
-                <div class="slides-container">
-                    <div class="mySlides fade">
-                        <div class="numbertext">1 / 3</div>
-                        <div class="company-info">
-                            <div class="company-text">
-                                <h4 class="subtitle">Company 1</h2>
-                                    <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
-                                        faucibus magna proin eu.</p>
+                <div id="slides-group">
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>   
+
+                    <div class="slides-container">
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <div class="company-info">
+                                <div class="company-text">
+                                    <h4 class="subtitle">Company 1</h2>
+                                        <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
+                                            faucibus magna proin eu.</p>
+                                </div>
+                                <img src="./assets/company1.png" alt="" class="company-photo">
                             </div>
-                            <img src="./assets/company1.png" alt="" class="company-photo">
                         </div>
-                    </div>
                     
-                    <div class="mySlides fade">
-                        <div class="numbertext">2 / 3</div>
-                        <div class="company-info">
-                            <div class="company-text">
-                                <h4 class="subtitle">Company 2</h2>
-                                    <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
-                                        faucibus magna proin eu.</p>
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <div class="company-info">
+                                <div class="company-text">
+                                    <h4 class="subtitle">Company 2</h2>
+                                        <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
+                                            faucibus magna proin eu.</p>
+                                </div>
+                                <img src="./assets/company2.svg" alt="" class="company-photo">
                             </div>
-                            <img src="./assets/company2.svg" alt="" class="company-photo">
                         </div>
-                    </div>
+                        
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <div class="company-info">
+                                <div class="company-text">
+                                    <h4 class="subtitle">Company 3</h2>
+                                        <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
+                                            faucibus magna proin eu.</p>
+                                </div>
+                                <img src="./assets/company3.png" alt="" class="company-photo">
+                            </div>
+                        </div>
+                    </div>  
                     
-                    <div class="mySlides fade">
-                        <div class="numbertext">3 / 3</div>
-                        <div class="company-info">
-                            <div class="company-text">
-                                <h4 class="subtitle">Company 3</h2>
-                                    <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis aliquam
-                                        faucibus magna proin eu.</p>
-                            </div>
-                            <img src="./assets/company3.png" alt="" class="company-photo">
-                        </div>
-                    </div>
-                </div>               
-                
-                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="next" onclick="plusSlides(1)">&#10095;</a>
-                
-                <div style="text-align:center">
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                </div>
+
+                <div style="text-align:center" id="dots-bar">
                     <span class="slide-dot" onclick="currentSlide(1)"></span>
                     <span class="slide-dot" onclick="currentSlide(2)"></span>
                     <span class="slide-dot" onclick="currentSlide(3)"></span>
                 </div>                        
             </section>
+
+            <section id="contact">
+                <h1 class="section-name">Contact me!</h1>
+                <div id="contacts-group">
+                    <div class="contact-card">
+                        <i class="fas fa-envelope"></i>
+                        <p>isabel.claudia31@gmail.com</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fas fa-thumbtack"></i>
+                        <p>Bucharest, Romania</p>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="fab fa-linkedin"></i>
+                        <p>Let's get in touch</p>
+                    </div>
+                </div>
+
+                <div id="contact-form">
+                    <h3>Contact Form</h3>
+                    <p id="contact-desc">Contact me for any colaborations, or just a greeting &#128522;</p>
+                    <form action="./submit.html">
+                        <div class="field">
+                            <label for="name">Name:</label>
+                            <input type="text" placeholder="Your name" name="name" required>  
+                        </div>
+                        
+                        <div class="field">
+                            <label for="email">Email:</label>
+                            <input type="email" placeholder="Your email" name="email" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="company">Company (optional):</label>
+                            <input type="text" placeholder="Your company" name="company">
+                        </div>
+                        <div class="field">
+                            <p>Services:</p>
+                            <input type="radio" name="services1" id="services" value="Graphic Design">
+                            <label for="services1">Graphic Design:</label>
+                            
+                            <input type="radio" name="services2" id="services" value="Web Development">
+                            <label for="services2">Web Development:</label>
+                            
+                            <input type="radio" name="services3" id="services" value="Other IT Field">
+                            <label for="services3">Other</label>
+                        </div>
+
+                        <div class="field">
+                            <label for="message" id="label-message">Message:</label>
+                            <textarea name="message" id="message" cols="90" rows="6" placeholder="Your message..." required></textarea>
+                        </div>
+
+                        <input type="submit" value="Send Email" id="submit">
+                    </form>
+                </div>
+
+            </section>
         </main>
+
+        <br>
+
+        <footer>
+            
+        </footer>
 
         <script>
             function myFunction() {
