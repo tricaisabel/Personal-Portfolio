@@ -1,0 +1,11 @@
+nav{
+    margin-top:-95px;
+}
+
+#projects{
+    margin-top:95px;
+}
+
+img{
+    object-fit: cover;
+}
