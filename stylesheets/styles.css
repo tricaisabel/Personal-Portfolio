@@ -138,7 +138,6 @@ i:hover, .drop-option:hover{
     align-items: center;
     animation-fill-mode: forwards;
     padding-top:80px;
-    padding-bottom:40px;
 }
 
 @keyframes fade{
@@ -153,7 +152,7 @@ i:hover, .drop-option:hover{
     text-align: center;
     font-weight: 400;
     font-size: 20px;
-    width:50%;
+    width:35%;
 }
 .hero-title #name{
     font-weight: 600;
@@ -175,6 +174,10 @@ i:hover, .drop-option:hover{
     font-size: 12px;
     margin-left:4px;
     color:#828282;
+}
+
+#download-btn{
+    margin:20px;
 }
 
 #hero{
@@ -212,7 +215,8 @@ i:hover, .drop-option:hover{
 }
 
 .card{
-    background-image: url("../assets/dot.svg");
+    background-color:rgb(130, 130, 130,0.2);
+    border-radius:50%;
     background-position: center;
     background-size: cover;
     width:200px;
@@ -267,7 +271,7 @@ i:hover, .drop-option:hover{
 
 
 #dot4{
-    top:235px;
+    top:225px;
     right:2%;
 }
 #dot5{
@@ -292,32 +296,20 @@ i:hover, .drop-option:hover{
 
 /* Projects */
 /* Gallery Images*/
-.column{
-    width:35%;
-    padding:10px;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.row{
+.photo-grid{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: flex-start;
-    width:70%;
-    margin:auto;
 }
 
-.column img{
-    width:100%;
+.photo-grid img{
+    width:25%;
     height:auto;
     padding:10px;
     border-radius:17px;
     transition: transform 2s, filter 1s;
 }
-
-
 
 /* Gallery Text */
 .category{
@@ -374,6 +366,7 @@ i:hover, .drop-option:hover{
     justify-content: space-around;
     align-items: flex-start;
     margin:auto;
+    flex-wrap: wrap;
 }
 
 .project{
@@ -446,6 +439,7 @@ i:hover, .drop-option:hover{
 .category2{
     display:flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin:auto;
     width:80%;
     justify-content: space-around;
@@ -720,7 +714,7 @@ i:hover, .drop-option:hover{
 
 form{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-between;
     width:90%;
@@ -760,6 +754,11 @@ input,textarea{
     color:black;
 }
 
+textarea{
+    width:100%;
+    height: 150px;
+}
+
 #submit{
     margin:20px auto;
     background-color: #1EA3DC;
@@ -776,7 +775,9 @@ footer{
 }
 
 
-@media screen and (max-width: 1500px) and (min-width: 1100px){
+
+
+@media screen and (max-device-width: 1500px){
     #dot2{ left:15%;}
 
     .card{
@@ -786,7 +787,11 @@ footer{
     #dot5{ right:15%;}
 }
 
-@media screen and (max-width: 1100px) and (min-width: 750px){
+@media screen and (max-device-width: 1100px){
+    .photo-grid img{
+        width:40%;
+    }
+
     #dot2{
         top:455px;
     }
@@ -796,7 +801,7 @@ footer{
     #dot1, #dot2, #dot3{left:8%; }
 
     #dot5{
-        top:445px;
+        top:450px;
     }
 
     #dot6{
@@ -831,10 +836,184 @@ footer{
     .menu-icon{ font-size:35px;}
 }
 
-@media screen and (max-width: 750px){
-    #name{
-        font-size: 40px;
+@media screen and (max-device-width: 500px){
+    #logo-title{
+        font-size:2.6em;
     }
+
+     #logo-title i{
+         font-size:1.2em;
+     }
+
+     .hero-title{
+         top:7em;
+     }
+
+    #download-btn, #location{
+        display:none;
+    }
+
+    .hero-title #name{
+        font-size: 3.5em;
+        margin:10px 0px;
+    }
+
+    .hero-title h1{
+        font-size:2.2em;
+        width:70%;
+    }
+
+    #center-photo{
+        width:80%;
+        top:30em;
+    }
+
+    #left-info,#right-info{
+        position:absolute;
+        display:block;
+        top:65em;
+    }
+
+    #hero{
+        height:2100px;
+    }
+
+    #left-info{
+        left:5%;
+    }
+
+    #right-info{
+        right:5%;
+    }
+
+    .card-title{
+        font-size:1.5em;
+    }
+
+    .card-info{
+        font-size:1.6em;
+        width:100%;
+        padding:0px;
+        margin:15px 0px 0px 0px;
+    }
+
+    .card{
+        padding:90px;
+    }
+
+    #dot1,#dot4{
+        top:225px;
+    }
+
+    #dot2,#dot5{
+        top:625px;
+    }
+
+    #dot3,#dot6{
+        top:1030px;
+    }
+
+    .section-name{
+        font-size:2.5em;
+    }
+
+    .category-name{
+        font-size:1.8em;
+    }
+
+    .photo-grid img{
+        width:70%;
+    }
+
+    #menu-drop{
+        top:9em;
+    }
+
+    #menu-btn{
+        transition: none;
+    }
+
+    .blue-btn{
+        padding: 22px 55px;
+        font-size:1.8em;
+        border-radius: 3em;
+    }
+
+    .blue-btn i{
+        font-size:0.7em;
+    }
+
+    .project{
+        width:100%;
+    }
+
+    .left-timeline, .right-timeline, .event,.timeline,.item-box{
+        width:95%;
+        padding:20px;
+    }
+
+    .item-box h4{
+        font-size:1.8em;
+    }
+
+    .item-box p{
+        font-size: 1.8em;;
+    }
+
+    .item-box i{
+        font-size:2em;
+        margin-right:20px;
+        margin-top:20px;
+    }
+
+    .category-name2{
+        font-size:2em;
+    }
+
+    .category-name2 i{
+        font-size:0.8em;
+    }
+
+    .event p, .event li, .event h4, .subtitle, .para-small, .numbertext{
+        font-size:1.7em;
+    }
+
+    .language{
+        font-size:1em;
+    }
+
+    .numbertext{
+        font-size:1.3em;
+    }
+
+    .mySlides{
+        padding:2%;
+    }
+
+    .company-photo{
+        display:none;
+    }
+
+    #contacts-group,#contact-form{
+        width:77%;
+    }
+
+    .contact-card p{
+        font-size: 1.4em;
+    }
+
+    .contact-card i{
+        font-size:3em;
+    }
+
+    .contact-card{
+        width:60%;
+    }
+
+    .contact-form{
+        font-size:2em;
+    }
+
 }
 
 /* Glow Effect */
