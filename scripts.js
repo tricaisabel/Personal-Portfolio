@@ -1,4 +1,4 @@
-function myFunction() {
+function hideShowMenu() {
     var x = document.getElementById("menu-drop");
     if (x.style.display === "none") {
         x.style.display = "block";
@@ -8,8 +8,7 @@ function myFunction() {
 }
 
 var slideIndex = 1;
-document.getElementsByTagName("body").addEventListener("load",showSlides(1));
-document.getElementById("submit-btn").addEventListener("click",()=>{alert("Congrats! Now your message will be sent to Isabel's email adress");});
+document.getElementsByTagName("body").addEventListener("load",showSlides);
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }

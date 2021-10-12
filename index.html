@@ -28,7 +28,7 @@
                     <a href="#"><i class="fa fa-inbox"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                 </div>
-                <button id="menu-btn" onclick="myFunction()"><i class="fas fa-bars menu-icon"></i></button>
+                <button id="menu-btn" onclick="hideShowMenu()"><i class="fas fa-bars menu-icon"></i></button>
                 <div id="menu-drop">
                     <a href="#" class="drop-option">Home</a>
                     <a href="#projects" class="drop-option">Projects</a>
@@ -467,17 +467,17 @@
                     <div id="contacts-group">
                         <div class="contact-card">
                             <i class="fas fa-envelope"></i>
-                            <p>isabel.claudia31@gmail.com</p>
+                            <p class="small-text" >isabel.claudia31 @gmail.com</p>
                         </div>
             
                         <div class="contact-card">
                             <i class="fas fa-thumbtack"></i>
-                            <p>Bucharest, Romania</p>
+                            <p class="small-text" >Bucharest, Romania</p>
                         </div>
             
                         <div class="contact-card">
                             <i class="fab fa-linkedin"></i>
-                            <p>Let's get in touch</p>
+                            <p class="small-text" >Let's get in touch</p>
                         </div>
                     </div>
             
@@ -501,14 +501,21 @@
                             </div>
                             <div class="field">
                                 <p>Services:</p>
-                                <input type="radio" name="services1" id="services" value="Graphic Design">
-                                <label for="services1">Graphic Design:</label>
-            
-                                <input type="radio" name="services2" id="services" value="Web Development">
-                                <label for="services2">Web Development:</label>
-            
-                                <input type="radio" name="services3" id="services" value="Other IT Field">
-                                <label for="services3">Other</label>
+                                <div class="radio">
+                                    <input type="radio" name="services1" class="services" value="Graphic Design">
+                                    <label for="services1">Graphic Design:</label>
+                                </div>
+                                
+                                <div class="radio">
+                                    <input type="radio" name="services2" class="services" value="Web Development">
+                                    <label for="services2">Web Development:</label>
+                                </div>
+                                
+                                <div class="radio">
+                                    <input type="radio" name="services3" class="services" value="Other IT Field">
+                                    <label for="services3">Other</label>
+                                </div>
+                                
                             </div>
             
                             <div class="field">
@@ -531,7 +538,6 @@
         <br>
 
         <footer>
-            
         </footer>
 
         <script src="./scripts.js"></script>
