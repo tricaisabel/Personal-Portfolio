@@ -9,7 +9,6 @@
         <link href="./stylesheets/fontawesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./stylesheets/styles.css">
         <link rel="stylesheet" href="./stylesheets/particle-animation.scss">
-        <script src="./scripts.js"></script>
     </head>
     <body onload=showSlides(1)>
         <header id="#home">
@@ -517,9 +516,9 @@
                                 <textarea name="message" id="message" placeholder="Your message..." required></textarea>
                             </div>
 
-                            <input type="hidden" name="_next" value="https://tricaisabel.github.io/Personal-Portfolio/"> 
+                            <input type="hidden" name="_next" value="https://tricaisabel.github.io/Personal-Portfolio/#contact"> 
                             <input type="hidden" name="_captcha" value="false">           
-                            <input type="submit" value="Send Email" class="blue-btn">
+                            <input id="submit-btn" type="submit" value="Send Email" class="blue-btn">
                         </form>
                     </div>
             
@@ -534,6 +533,9 @@
         <footer>
             
         </footer>
+
+        <script src="./scripts.js"></script>
+
 
     </body>
 </html>

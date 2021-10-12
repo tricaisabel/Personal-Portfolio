@@ -8,7 +8,8 @@ function myFunction() {
 }
 
 var slideIndex = 1;
-
+document.getElementsByTagName("body").addEventListener("load",showSlides(1));
+document.getElementById("submit-btn").addEventListener("click",()=>{alert("Congrats! Now your message will be sent to Isabel's email adress");});
 function plusSlides(n) {
     showSlides(slideIndex += n);
 }
