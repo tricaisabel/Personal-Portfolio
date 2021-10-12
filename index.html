@@ -493,7 +493,7 @@
             
                             <div class="field">
                                 <label for="email">Email:</label>
-                                <input type="email" placeholder="Your email" name="email" required>
+                                <input type="email" name="email" placeholder="Email Address">
                             </div>
             
                             <div class="field">
@@ -516,7 +516,10 @@
                                 <label for="message" id="label-message">Message:</label>
                                 <textarea name="message" id="message" placeholder="Your message..." required></textarea>
                             </div>
-            
+
+                            <input type="hidden" name="_next" value="https://tricaisabel.github.io/submit.html"> 
+                            <input type="hidden" name="_autoresponse" value="your custom message">
+           
                             <input type="submit" value="Send Email" class="blue-btn">
                         </form>
                     </div>
