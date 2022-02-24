@@ -339,12 +339,6 @@ nav{
     padding-right: 7px;
 }
 
-#skills .skill:hover{
-    transform: scale(1.05);
-    font-weight: bold;
-    color:#1EA3DC;
-}
-
 #skills p,#skills ul{
     font-size:0.95em;
 }
@@ -422,6 +416,11 @@ nav{
     align-items: flex-start;
     margin:auto;
     flex-wrap: wrap;
+}
+
+.project-buttons{
+    display:flex;
+    flex-direction: row;
 }
 
 .project{
@@ -843,7 +842,7 @@ footer{
     #dot3{
         top:675px;
     }
-    #dot1, #dot2, #dot3{left:8%; }
+    #dot1, #dot2, #dot3{left:85%; }
 
     #dot5{
         top:450px;
@@ -853,7 +852,7 @@ footer{
         top:675px;
     }
 
-    #dot4, #dot5, #dot6{right:8%;}
+    #dot4, #dot5, #dot6{display:none}
     #socials{ display:none;}
 
     #center-photo,#hero-background{
@@ -957,16 +956,27 @@ footer{
         padding:90px;
     }
 
-    #dot1,#dot4{
+    #dot1{
+        top:250px;
+    }
+
+    #dot2{
+        top:657px;
+    }
+
+    #dot3{
+        top:1055px;
+    }
+    #dot4{
         top:225px;
     }
 
-    #dot2,#dot5{
-        top:625px;
+    #dot5{
+        top:657px;
     }
 
-    #dot3,#dot6{
-        top:1030px;
+    #dot6{
+        top:1055px;
     }
 
     .section-name{
@@ -1073,7 +1083,9 @@ footer{
     i{font-size:1em; }
 
     .card {
-    padding: 100px;
+    padding: 48px;
+    width:100%;
+    height:300px;
 }
 
     p,li,h1,h3,h4,#name,label,input,textarea{

@@ -8,7 +8,6 @@
         <link href="./stylesheets/all.min.css" rel="stylesheet">
         <link href="./stylesheets/fontawesome.min.css" rel="stylesheet">
         <link rel="stylesheet" href="./stylesheets/styles.css">
-        <link rel="stylesheet" href="./stylesheets/particle-animation.scss">
     </head>
     <body onload=showSlides(1)>
         <header id="#home">
@@ -28,13 +27,13 @@
                     <a href="#"><i class="fa fa-inbox"></i></a>
                     <a href="#"><i class="fab fa-github"></i></a>
                 </div>
-                <button id="menu-btn" onclick="hideShowMenu()"><i class="fas fa-bars menu-icon"></i></button>
+                <button id="menu-btn" onclick=hideShowMenu()><i class="fas fa-bars menu-icon"></i></button>
                 <div id="menu-drop">
-                    <a href="#" class="drop-option">Home</a>
-                    <a href="#projects" class="drop-option">Projects</a>
-                    <a href="#education" class="drop-option">Education</a>
-                    <a href="#experience" class="drop-option">Experience</a>
-                    <a href="#contact" class="drop-option">Contact me</a>
+                    <a href="#" onclick=hideShowMenu() class="drop-option">Home</a>
+                    <a href="#projects" onclick=hideShowMenu() class="drop-option">Projects</a>
+                    <a href="#education" onclick=hideShowMenu() class="drop-option">Education</a>
+                    <a href="#experience"  onclick=hideShowMenu() class="drop-option">Experience</a>
+                    <a href="#contact"  onclick=hideShowMenu() class="drop-option">Contact me</a>
                 </div>
             </nav>
         </header>
@@ -63,7 +62,7 @@
                         </div>
                         <div class="card" id="dot2">
                             <h2 class="card-title">Learning</h2>
-                            <p class="card-info">I am constantly trying to learn new things and help other people with my knowledge</p>
+                            <p class="card-info">I am constantly trying to learn new things and help other people</p>
                         </div>
                         <div class="card" id="dot3">
                             <h2 class="card-title">Design</h2>
@@ -84,7 +83,7 @@
                         </div>
                         <div class="card" id="dot6">
                             <h2 class="card-title">More about me</h2>
-                            <p class="card-info">If you want to find out more details about myself and my journey scroll down.</p>
+                            <p class="card-info">If you want to find out more details about me and my journey scroll down.</p>
                         </div>
                     </div>
                 </section>
@@ -108,7 +107,7 @@
                                 <li class="skill">Graphic Design experience</li>
                                 <li class="skill">Informatic Systems Design</li>
                                 <li class="skill">Excellent HTML, CSS & JavaScript</li>
-                                <li class="skill">MERN Stack</li>
+                                <li class="skill">Trying to master the MERN Stack</li>
                                 <li class="skill">SQL and Databases</li>
                                 <li class="skill">OOP & Data Structures in C++</li>
                                 <li class="skill">Statistics and Data Analysis</li>
@@ -121,8 +120,8 @@
                     <h2 class="section-name">About me</h2>
                     <p>I started my programming journey with C++ in high-school and then got more in-depth with algorithms,
                         data structures and object oriented programming. I later started tutoring OOP in C++.</p>
-                    <p>Then, I discovered web development and started to build websites on my own using my previous the graphic design
-                        knowledge, a hobby I had for a very long time. </p>
+                    <p>Then, I discovered web development, took online programming courses (freeCodeCamp, the Odin Project, Youtube Tutorials, etc.) and then I started building websites on my own using my previous the graphic design
+                        skills, a hobby I had for a very long time. </p>
                     <p>Last year I started working on my bachelor's degree project and I'm excited to apply all the new things I learned. I am building a project management website using the MERN stack that helps teams to organise according to the Agile methodology.</p>
                     <p>I was  memeber of the student's syndicate and had previous part-time working experience in graphic design, but I wanted to postpone getting a full time programming position after I graduated because I felt I didn't have as much time as I wanted to dedicate. I am committed to all of my projects and as a result managed to get several performance scholarships in the last 3 years.</p>
                 </section>
@@ -134,9 +133,6 @@
                         <div class="category">
                             <h3 class="category-name" id="first-title"><i class="fas fa-paint-brush"></i>Graphic Design</h3>
                             <div class="photo-grid">
-                                <img src="./assets/gallery/motivatie1.png" alt="" id="small-photo">
-                                <img src="./assets/gallery/motivatie2.png" alt="">
-                                <img src="./assets/gallery/motivatie3.png" alt="">
                                 <img src="./assets/gallery/prezentare1.png" alt="">
                                 <img src="./assets/gallery/prezentare2.png" alt="">
                                 <img src="./assets/gallery/prezentare3.png" alt="">
@@ -148,99 +144,107 @@
                                     class="fas fa-images"></i>Full Gallery</a>
                         </div>
             
-                        <!-- Programming Category -->
+                        <!-- Web Category -->
                         <div class="category">
-                            <h3 class="category-name"><i class="fas fa-code-branch"></i>Programming</h3>
+                            <h3 class="category-name"><i class="fas fa-laptop-code"></i>Web Development & Programming</h3>
                             <div class="project-group">
                                 <div class="project">
-                                    <img src="./assets/laptop1.png" alt="">
+                                    <img src="./assets/svg editor.PNG" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
-                                            <h4 class="title">Server-Client Library</h3>
-                                                <p class="language"><i class="fas fa-keyboard"></i>Java</p>
-                                                <p class="project-desc">A client sends requests to a server of 3 types: checking the
-                                                    availability of a certain book, renting a book, returning a book, and updating
-                                                    the quantity accordingly. A library client can issue one of the previous types
-                                                    of requests through an option menu.</p>
-                                                <a href="#" class="blue-btn"><i class="fab fa-github"></i>Code</a>
+                                            <h4 class="title">SVG Editor</h3>
+                                                <p class="language"><i class="fas fa-passport"></i>HTML, CSS, JavaScript</p>
+                                                <p class="project-desc">A drawing app that uses SVG to represent the shapes drawn by the user. It
+                                                    includes color pickers, stoke settings, drag and drop, and different tools. You can either export as
+                                                    SVG or PNG at the end.</p>
+                                                <div class="project-buttons">
+                                                    <a href="https://tricaisabel.github.io/SVG-Editor/" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-codepen"></i>View</a>
+                                                    <a href="https://github.com/tricaisabel/SVG-Editor" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-github"></i>Code</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="project">
-                                    <img src="./assets/laptop2.png" alt="">
+                                    <img src="./assets/voocab.png" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
                                             <h4 class="title">Voocab</h3>
                                                 <p class="language"><i class="fas fa-keyboard"></i>C# (Winforms)</p>
-                                                <p class="project-desc">This is a vocabulary app in which the users get to introduce
-                                                    new words, add definitions to existing ones and rate which definitions are the
-                                                    most accurate. The project has a search bar with autocomplete, different
-                                                    criteria to filter the words, a different visual analitics for the words updated
-                                                    automatically.</p>
-                                                <a href="#" class="blue-btn"><i class="fab fa-github"></i>Code</a>
+                                                <p class="project-desc">A vocabulary app where users get to add
+                                                    new words, definitions and rate the most accurate definitions. The project has a search bar with
+                                                    autocomplete, filter options and analitics</p>
+                                                <a href="https://github.com/tricaisabel/Voocab" class="blue-btn"><i
+                                                        class="fab fa-github"></i>Code</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="project">
-                                    <img src="./assets/laptop3.png" alt="">
+                                    <img src="./assets/dragolingo.PNG" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
-                                            <h4 class="title">Online CV</h3>
-                                                <p class="language"><i class="fas fa-keyboard"></i>React, CSS, Material-UI</p>
-                                                <p class="project-desc">An Online CV with the scope of displaying important
-                                                    information about myself to interested employers. It was made during my Ubisoft
-                                                    practice program. I used already built React components and I changed their
-                                                    properties using CSS to personalise the overall interface.</p>
-                                                <a href="#" class="blue-btn"> <i class="fab fa-github"></i>Code</a>
+                                            <h4 class="title">Duolingo Clone</h3>
+                                                <p class="language"><i class="fas fa-keyboard"></i>HTML, CSS, JavaScript</p>
+                                                <p class="project-desc">A Duolingo type english test about common idioms and phrases. You can choose
+                                                    the correct words using drag and drop. At the end you can see your result.</p>
+                                                <div class="project-buttons">
+                                                    <a href="https://tricaisabel.github.io/DragoLingo/" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-codepen"></i>View</a>
+                                                    <a href="https://github.com/tricaisabel/DragoLingo" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-github"></i>Code</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-            
-                        <!-- Web Category -->
-                        <div class="category">
-                            <h3 class="category-name"><i class="fas fa-laptop-code"></i>Web Design & Development</h3>
                             <div class="project-group">
                                 <div class="project">
-                                    <img src="./assets/laptop4.png" alt="">
+                                    <img src="./assets/sushi.PNG" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
-                                            <h4 class="title">Pop Sushi</h3>
-                                                <p class="language"><i class="fas fa-bullhorn"></i>Product Landing Page</p>
+                                            <h4 class="title">Sushi Landing Page</h3>
+                                                <p class="language"><i class="fas fa-bullhorn"></i>HTML, CSS</p>
                                                 <p class="project-desc">A sushi restaurant presentation website which contains a home
                                                     section, displays several products, a newsletter section, social media icons,
                                                     and an embedded youtube video.</p>
                                                 <a href="https://codepen.io/tricaisabel/full/ZEyyYKy" class="blue-btn"
-                                                    target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                                    target="_blank"><i class="fab fa-codepen"></i>View</a>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="project">
-                                    <img src="./assets/laptop5.PNG" alt="">
+                                    <img src="./assets/ball.PNG" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
-                                            <h4 class="title">Feedback Survey</h3>
-                                                <p class="language"><i class="fas fa-poll-h"></i>Survey Form</p>
-                                                <p class="project-desc">A survey which contains multiple types of inputs: text-boxes
-                                                    with different HTML5 validations, drop-downs, radio-buttons, check-boxes and
-                                                    text-areas.</p>
-                                                <a href="https://codepen.io/tricaisabel/full/bGRBwKK" class="blue-btn"
-                                                    target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                            <h4 class="title">Jumping Ball</h3>
+                                                <p class="language"><i class="fas fa-poll-h"></i>HTML, CSS</p>
+                                                <p class="project-desc">A simple mini-game where you have to stop the ball from hitting a wall, using a paddle moved through the arrow-keys. The game logic was implemented through a canvas.</p>
+                                                <div class="project-buttons">
+                                                    <a href="https://tricaisabel.github.io/Jumping-Ball/" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-codepen"></i>View</a>
+                                                    <a href="https://github.com/tricaisabel/Jumping-Ball" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-github"></i>Code</a>
+                                                </div>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="project">
-                                    <img src="./assets/laptop6.PNG" alt="">
+                                    <img src="./assets/pets and owners.PNG" alt="">
                                     <div class="overlay">
                                         <div class="project-text">
-                                            <h4 class="title">HTML Documentation</h3>
-                                                <p class="language"><i class="fas fa-passport"></i>Technical Documentation Page</p>
-                                                <p class="project-desc">A HTML technical documentaion page with different sections of
-                                                    theoretical definitions with code examples and code results. The page has a
-                                                    fixed left menu which helps navigation.</p>
-                                                <a href="https://codepen.io/tricaisabel/full/vYZJPBG" class="blue-btn"
-                                                    target="_blank"><i class="fab fa-codepen"></i>Live View</a>
+                                            <h4 class="title">Pets and Owners Database</h3>
+                                                <p class="language"><i class="fas fa-keyboard"></i>JavaScript, React</p>
+                                                <p class="project-desc">React App with a REST API and a SQLite database that keeps track of the pet
+                                                    owners. Data is handled using Sequelize and the whole application is deployed on Heroku using
+                                                    the link down below</p>
+                                                <div class="project-buttons">
+                                                    <a href="https://databasetehnologiiweb.herokuapp.com/" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-github"></i>View</a>
+                                                    <a href="https://github.com/tricaisabel/React-Pet-Database" target="_blank" class="blue-btn"><i
+                                                            class="fab fa-github"></i>Code</a>
+                                                </div>
+                                
                                         </div>
                                     </div>
                                 </div>
@@ -278,10 +282,10 @@
                                     </div>
                                     <div class="event">
                                         <h4>2019-2022</h4>
-                                        <p>Faculty of Cybernetics, Economic Informatics and Statistics</p>
+                                        <p>ASE - Faculty of Cybernetics, Economic Informatics and Statistics</p>
                                         <ul>
                                             <li>Ranked in the top 3% of the program in 2019</li>
-                                            <li>Besides the programming background I am familiar with subjects such as finance and bussiness law</li>
+                                            <li>Besides the programming background I am familiar with subjects such as finance and management</li>
                                         </ul>
             
                                     </div>
@@ -299,7 +303,7 @@
                                         <i class="far fa-file-alt"></i>
                                         <div class="item-info">
                                             <h4>2020 - Ubisoft</h4>
-                                            <p>Letter of reference</p>
+                                            <p>Letter of Reference</p>
                                         </div>
                                     </div>
                                     <div class="item-box">
@@ -354,8 +358,8 @@
                                 <div class="numbertext">1 / 3</div>
                                 <div class="company-info">
                                     <div class="company-text">
-                                        <h4 class="subtitle">Ubisoft</h2>
-                                            <p class="para-small">I participated in an internship at Ubisoft for the university's practice program where I first learned React and JavaScript fundamentals. At the end, we I had to build a basic React application: a digital CV. I had just learned the basisc back then so after a while I decided to redo that idea, building this very own website. </p>
+                                        <h4 class="subtitle">Ubisoft (2020)</h2>
+                                            <p class="para-small">I participated in an internship at Ubisoft for the practice program where I first learned React and JavaScript fundamentals. At the end, we I had to build a basic React application: a digital CV. I had just learned the basics back then, so after a while I decided to build a (hopefully) better version of that project with this website.  </p>
                                         </div>
                                     <img src="./assets/company2.svg" alt="" class="company-photo">
                                 </div>
@@ -365,9 +369,8 @@
                                 <div class="numbertext">2 / 3</div>
                                 <div class="company-info">
                                     <div class="company-text">
-                                        <h4 class="subtitle">SiSC</h2>
-                                            <p class="para-small">I joined the student's syndicate in the first year of university mainly to make new friends and find people with similar passions. I learned a lot of new skills during this time as I had the opportunity make marketing materials using my graphic design knowledge.</p>
-                                            <p></p>
+                                        <h4 class="subtitle">SiSC (2019-2020)</h2>
+                                            <p class="para-small">I joined the student's syndicate in the first year of university mainly to make new friends and find people with similar passions. I learned new skills like time-management, working with Illustrator and Photoshop and I had many opportunities make marketing materials using my graphic design knowledge.</p>
                                         </div>
                                     <img src="./assets/company1.png" alt="" class="company-photo">
                                 </div>
@@ -377,12 +380,10 @@
                                 <div class="numbertext">3 / 3</div>
                                 <div class="company-info">
                                     <div class="company-text">
-                                        <h4 class="subtitle">Company 3</h2>
-                                            <p class="para-small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lobortis
-                                                aliquam
-                                                faucibus magna proin eu.</p>
+                                        <h4 class="subtitle">Small Graphic Design Projects (2020-2021)</h2>
+                                            <p class="para-small">After I stopped being an active member in SiSC, I started getting involved in smaller or bigger campaigns of my own. Those included implementing graphic design materials for an energy consultance company, an english learning program for children, a recycling company and more. </p>
                                     </div>
-                                    <img src="#" alt="" class="company-photo">
+                                    <img src="https://images.squarespace-cdn.com/content/v1/5c435991c258b4167da78ab9/1549206051931-LSD8U9TEU271P7EIR8WK/marketiu_digital-marketing-graphic-design.jpg" alt="" class="company-photo">
                                 </div>
                             </div>
                         </div>
