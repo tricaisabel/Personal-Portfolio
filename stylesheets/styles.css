@@ -5,6 +5,7 @@ body{
     font-family: 'Poppins', sans-serif;
     margin:0px 0px;
     background-color: #fcfcfc;
+    font-size-adjust: 0.5 !important;
 }
 
 p,h1,h2{
@@ -156,8 +157,8 @@ nav{
 .hero-title h1{
     text-align: center;
     font-weight: 400;
-    font-size: 20px;
-    width:35%;
+    font-size: 18px;
+    width:27%;
 }
 .hero-title #name{
     font-weight: 600;
@@ -166,6 +167,7 @@ nav{
     animation-name:color-change;
     animation-duration:4s;
     animation-iteration-count: infinite;
+    margin:10px 0px;
 }
 
 #location i{
@@ -182,14 +184,14 @@ nav{
 }
 
 #download-btn{
-    margin:20px;
+    margin:15px;
 }
 
 #hero{
     display:flex;
     flex-direction: row;
     justify-content: space-evenly;
-    height:550px;
+    height:400px;
 }
 
 #hero-background{
@@ -200,9 +202,11 @@ nav{
     position:absolute;
 }
 
-#center-photo{
-    width:30%;
+#profile-pic{
     transition: transform 1s, filter 1s;
+    position: absolute;
+    width:23%;
+    height: auto;
 }
 
 @keyframes get-big{
@@ -210,7 +214,7 @@ nav{
     100%{opacity:1;}
 }
 
-#center-photo:hover{
+#profile-pic:hover{
     transform:scale(1.05);
     filter:drop-shadow(0 0 7px rgb(30, 163, 220,0.3));  
 }
@@ -855,7 +859,7 @@ footer{
     #dot4, #dot5, #dot6{display:none}
     #socials{ display:none;}
 
-    #center-photo,#hero-background{
+    #hero-background{
         position:absolute;
         top:380px;
     } 
@@ -916,11 +920,6 @@ footer{
     .hero-title h1{
         font-size:2.2em;
         width:70%;
-    }
-
-    #center-photo{
-        width:70%;
-        top:38em;
     }
 
     #left-info,#right-info{
