@@ -825,7 +825,7 @@ footer{
 
 
 
-@media screen and (max-device-width: 1500px){
+/* @media screen and (max-device-width: 1500px){
     #dot2{ left:15%;}
 
     .card{
@@ -833,9 +833,9 @@ footer{
     }
 
     #dot5{ right:15%;}
-}
+} */
 
-@media screen and (max-device-width: 1100px){
+/* @media screen and (max-device-width: 1100px){
     .photo-grid img{
         width:40%;
     }
@@ -856,7 +856,7 @@ footer{
         top:675px;
     }
 
-    #dot4, #dot5, #dot6{display:none}
+    
     #socials{ display:none;}
 
     #hero-background{
@@ -885,9 +885,22 @@ footer{
     #skills .timeline{
         text-align: center;
     }
-}
+} */
 
 @media screen and (max-device-width: 500px){
+    #dot2{
+        top:455px;
+    }
+    #dot3{
+        top:675px;
+    }
+    #dot1, #dot2, #dot3{left:85%; }
+
+    #dot4, #dot5, #dot6{display:none}
+    #profile-pic{
+        width:70%;
+        top:580px;
+    }
     #nav-links{
         display: none;
     }
@@ -913,7 +926,7 @@ footer{
     } */
 
     .hero-title #name{
-        font-size: 3.5em;
+        font-size: 3.5em !important;
         margin:10px 0px;
     }
 
@@ -1047,9 +1060,17 @@ footer{
         font-size:1.3em;
     }
 
-    i {
-    padding-right: 0.5em !important;
+    .far, .fas, .fab{
+        font-size: 35px;
     }
+
+    #socials{
+        width:20%;
+    }
+
+    .skill i{ display:none;}
+
+    .menu-icon, .social-icon{ font-size:60px;} 
 
     .mySlides{
         padding:2%;
