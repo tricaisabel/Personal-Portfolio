@@ -898,8 +898,8 @@ footer{
 
     #dot4, #dot5, #dot6{display:none}
     #profile-pic{
-        width:70%;
-        top:580px;
+        width:65%;
+        top:618px;
     }
     #nav-links{
         display: none;
@@ -907,7 +907,7 @@ footer{
 
     #menu-btn{
         display:block;
-        margin-right:-10%;}
+        margin-right:-4%;}
 
     #logo-title{
         font-size:2.6em;
@@ -1062,6 +1062,10 @@ footer{
 
     .far, .fas, .fab{
         font-size: 35px;
+    }
+
+    .category-name .fas{
+        display:none;
     }
 
     #socials{
