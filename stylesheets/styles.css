@@ -183,10 +183,6 @@ nav{
     color:#828282;
 }
 
-#download-btn{
-    margin:15px;
-}
-
 #hero{
     display:flex;
     flex-direction: row;
@@ -899,7 +895,7 @@ footer{
     #dot4, #dot5, #dot6{display:none}
     #profile-pic{
         width:65%;
-        top:618px;
+        top:654px;
     }
     #nav-links{
         display: none;
@@ -921,10 +917,9 @@ footer{
          top:7em;
      }
 
-    /* #download-btn, #location{
+    #location{
         display:none;
-    } */
-
+    }
     .hero-title #name{
         font-size: 3.5em !important;
         margin:10px 0px;
@@ -1009,7 +1004,7 @@ footer{
 
     .blue-btn{
         padding: 22px 55px;
-        font-size:1.8em;
+        font-size:1.9em;
         border-radius: 3em;
     }
 
